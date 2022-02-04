@@ -7,6 +7,7 @@ authors = ["Vladimir Panferov <v3nseagal@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 pandas = "^1.4.0"
+openpyxl = "^3.0.9"
 
 [tool.poetry.dev-dependencies]
 
