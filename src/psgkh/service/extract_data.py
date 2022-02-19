@@ -146,7 +146,7 @@ class ExtractDataService:
         return cell_range[sheet_type]
 
     @staticmethod
-    def process_data(sheet: pyxl.Workbook) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    def get_metering_device_value_account_bill(sheet: pyxl.Workbook) -> Tuple[pd.DataFrame, pd.DataFrame]:
         sheet_type = ExtractDataService.get_type(sheet=sheet)
         metering_device_value = ExtractDataService.get_metering_device_value(
             sheet=sheet,

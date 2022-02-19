@@ -14,7 +14,10 @@ def main(data_directory: str) -> NoReturn:
         workbook = pyxl.load_workbook(file_path, data_only=True)
         sheet = workbook.active
         
-        processed_data = ExtractDataService.process_data(sheet=sheet)
+        metering_device_value, accounr_and_bill\
+            = ExtractDataService.get_metering_device_value_account_bill(
+                sheet=sheet,
+            )
 
 
 if __name__ == "__main__":
